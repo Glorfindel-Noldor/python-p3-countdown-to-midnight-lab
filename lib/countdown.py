@@ -1,6 +1,15 @@
 # your code goes here!
-def countdown_with_sleep(number):
-    while(number > 0):
+import time
+
+def countdown(number):
+    while number > 0:
         print(f'{number} SECOND(S)!')
-        number = number - 1
-    return print( "HAPPY NEW YEAR!")
+        number -= 1
+    print("HAPPY NEW YEAR!")
+
+def countdown_with_sleep(number):
+    while number > 0:
+        print(f'{number} SECOND(S)!')
+        time.sleep(1)  # Introduce a 1-second delay
+        number -= 1
+    print("HAPPY NEW YEAR!")
