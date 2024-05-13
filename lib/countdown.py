@@ -10,6 +10,6 @@ def countdown(number):
 def countdown_with_sleep(number):
     while number > 0:
         print(f'{number} SECOND(S)!')
-        time.sleep(1)  # Introduce a 1-second delay
+        time.sleep(1)
         number -= 1
     print("HAPPY NEW YEAR!")
